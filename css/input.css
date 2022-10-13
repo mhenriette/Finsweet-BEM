@@ -1,0 +1,510 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+
+.body{
+    @apply font-Roboto
+}
+.nav{
+    @apply relative flex justify-between mx-16 p-3 z-10
+}
+.nav__menu{
+    @apply flex items-center
+
+}
+.nav__list{
+    @apply  flex space-x-10 
+}
+.nav__item{
+    @apply relative  before:absolute before:block before:w-full before:h-0.5
+    before:bottom-0 before:left-0 before:bg-ourblue
+    before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+    before:transition before:ease-in-out before:duration-300 
+}
+.nav__button,
+.hero-content__btn,
+.cta-section__btn,
+.pricing__btn,
+.footer__btn,
+.header__btn,
+.contact__btn,
+.button{
+   @apply bg-ourblue mx-10 px-8 py-3 font-bold rounded-lg text-white hover:bg-btnindigo hover:text-black
+
+}
+.hero-content{
+    @apply flex flex-col  items-center space-y-10 py-10 relative bg-gradient-to-t from-darkwhite  via-indigo-100 to-white ;
+
+}
+.features__headline,
+.advert__headline,
+.discover__headline,
+.lead__headline,
+.remote__headline,
+.marketing__headline,
+.time-tracker__headline,
+.headline{
+    @apply font-bold text-2xl text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-blue-400 ;
+ 
+}
+.hero-content__title,
+.features__title,
+.advert__title,
+.cta-section__title,
+.discover__title,
+.discover__title,
+.last-feature__title,
+.testimonials__title ,
+.pricing__title ,
+.faq-section__title,
+.lead__title,
+.remote__title,
+.product__title,
+.marketing__title,
+.header__title,
+.time-tracker__title,
+.contact__title,
+.title{
+    @apply  text-3xl font-bold text-ourblue leading-tight font-Roboto
+}
+.hero-content__title--large,
+
+.title--hero{
+@apply w-1/2  text-center text-6xl z-10
+}
+.hero-content__title--small{
+    @apply  text-5xl text-center w-1/3
+}
+.hero-content__subtitle,
+.advert__subtitle,
+.cta-section__subtitle,
+.discover__subtitle,
+.last-feature__subtitle,
+.pricing__subtitle,
+.faq-section__subtitle ,
+.lead__subtitle,
+.remote__subtitle,
+.marketing__subtitle,
+.header__subtitle,
+.time-tracker__subtitle,
+.subtitle{
+    @apply   font-normal text-ourblue  text-base 
+}
+.hero-content__subtitle--large,
+.subtitle--hero{
+    @apply w-1/2 text-center z-10
+}
+.hero-content__subtitle--small{
+    @apply w-1/3 text-center
+}
+.hero-content__input{
+    @apply bg-white flex justify-between  items-center w-1/3 p-1 rounded-lg shadow-md z-10
+}
+.hero-content__btn--margin{
+    @apply mx-0
+}
+.hero-content__dashboard{
+    @apply w-4/5 z-10
+}
+.hero-content__email{
+    @apply mx-3 text-ourblue opacity-50
+}
+.hero-content__image{
+    @apply object-contain
+}
+.hero-content__quality{
+    @apply font-normal text-base
+
+}
+.hero-content__blur-image{
+    @apply absolute bottom-0 
+}
+.features{
+    @apply flex flex-col  items-center space-y-10 py-10 
+
+
+}
+.product__title--small,
+.features__title--small{
+    @apply w-1/3 text-center
+}
+
+.features__content{
+    @apply flex space-x-5 w-10/12 bg-lightviolet p-5 rounded-lg
+}
+.features__card{
+    @apply flex flex-col w-1/3 space-y-5
+}
+.features__icon{
+    @apply w-1/6
+}
+.features__card-title{
+    @apply font-bold text-2xl leading-relaxed text-ourblue
+}
+.features__card-subtitle{
+    @apply font-normal text-base text-ourblue
+}
+
+.advert{
+    @apply grid grid-cols-2  my-20 items-center  gap-16 mx-16
+}
+.advert__content{
+    @apply  space-y-5 flex flex-col p-5
+}
+.advert__icon{
+    @apply w-1/12 
+}
+.advert__list{
+    @apply flex flex-col space-y-5 p-5
+
+}
+.advert__item{
+    @apply flex items-center space-x-3
+}
+.advert__title--small{
+    @apply text-4xl
+}
+.advert__article{
+    @apply font-medium text-xl 
+}
+.cta-section{
+    @apply grid grid-cols-2 px-16 py-10 gap-10  items-center bg-gradient-to-r pb-5 from-green-100 via-blue-100 to-gray-100;
+  
+}
+.cta-section__btn--margin{
+    @apply ml-0
+}
+.cta-section__title--small{
+    @apply w-1/2
+}
+.cta-section__content{
+    @apply flex flex-col space-y-10  items-start
+}
+
+.cta-section__image{
+    @apply object-contain 
+}
+.logos{
+    @apply mx-16 gap-16 my-16 flex
+}
+.discover{
+    @apply grid grid-cols-2 my-16 mx-10 justify-center gap-5 p-10
+}
+.discover__list{
+    @apply space-y-5
+}
+.discover__content{
+    @apply space-y-5
+}
+.discover__card{
+    @apply flex space-x-4 items-center
+}
+.discover__title--small{
+    @apply text-base
+}
+.last-feature{
+    @apply flex flex-col space-y-10 mx-10 items-center
+}
+.last-feature__title--small{
+    @apply text-2xl
+}
+.last-feature__content{
+    @apply w-11/12 bg-lightrose grid rounded-lg  p-5 divide-x-2 gap-5 grid-cols-3
+
+}
+.last-feature__cards{
+    @apply space-y-4 pl-10
+}
+.subtitle--smallsubtitle{
+    @apply text-base
+}
+.testimonials{
+    @apply flex items-center flex-col space-y-5 my-16
+}
+.testimonials__headline{
+    @apply w-1/2 text-center py-5
+}
+.testimonials__title--big{
+    @apply text-4xl  
+}
+.testimonials__profiles{
+    
+    @apply grid grid-cols-3 gap-5 justify-center items-center place-items-center w-10/12
+}
+.testimonials__card{
+    @apply  items-center flex flex-col border-2 rounded-lg border-indigo-100 p-10 gap-y-2 text-ourblue
+}
+.testimonials__content{
+    @apply font-semibold text-lg
+}
+.testimonials__name{
+    @apply font-medium text-xl
+}
+.testimonials__profession{
+    @apply font-normal text-xs
+}
+.pricing{
+    @apply text-center gap-y-5 my-32 items-center flex flex-col 
+}
+.pricing__title--large {
+    @apply font-bold text-5xl w-1/2
+}
+.pricing__btn--margin{
+    @apply mx-10
+}
+.footer{
+    @apply    bg-ourblue text-white  p-16 relative gap-y-16 flex flex-col 
+}
+
+.footer__list{
+    @apply grid   grid-cols-5 gap-10
+}
+.footer__items{
+    @apply flex flex-col space-y-3
+}
+.footer__subscribe{
+    @apply flex flex-col space-y-6 col-span-2
+}
+.footer__buttons{
+    @apply flex 
+}
+.footer__input{
+    @apply w-1/2 border rounded-lg  bg-lightblack border-none py-3 text-center rounded-r-none
+}
+.footer__btn--white{
+    @apply bg-white text-black w-1/3 m-0 
+}
+.footer__media{
+    @apply flex items-center justify-center space-x-5  
+}
+.footer__line{
+    @apply w-1/3 h-0.5 bg-white opacity-50
+}
+.footer__image{
+    @apply flex items-center justify-center space-x-5  
+}
+.footer__title{
+    @apply font-semibold text-base
+}
+.footer__link{
+    @apply font-normal text-sm text-white opacity-50
+}
+
+
+.footer__logo{
+    @apply w-1/3
+}
+.footer__blur{
+    @apply absolute bottom-0 -z-10 left-0
+}
+/* ---------------------------product css------------------------ */
+.header{
+    @apply  grid grid-cols-2 gap-5 mx-16 my-10 items-center
+}
+.header__content{
+    @apply flex flex-col space-y-5 
+}
+.header__buttons{
+    @apply flex items-center justify-start
+}
+.header__btn--margin{
+    @apply ml-0 mr-2 
+}
+.header__btn--violet{
+    @apply bg-white text-black border-2 border-indigo-200 ml-3
+}
+.header__title--large{
+    @apply text-5xl font-bold
+}
+.header__scale-img{
+    @apply relative
+}
+.header__blur-img{
+    @apply absolute  top-0 -z-10  right-0
+}
+
+.product{
+    @apply flex flex-col items-center pt-16 bg-gradient-to-r  from-green-100 via-blue-100 to-gray-100
+}
+.marketing__title--small{
+    @apply  w-1/2 
+}
+.product__items{
+    @apply grid grid-cols-3 gap-5 mt-10  rounded-tr-3xl mr-16 px-10 py-10 bg-darkwhite;
+   
+}
+.product__card{
+    @apply flex flex-col space-y-4 items-start w-full
+}
+.features__card-title{
+    @apply font-bold text-base 
+}
+.features__card-subtitle{
+    @apply font-normal text-sm
+}
+.marketing{
+    @apply grid grid-cols-2 mx-16 items-center my-10 gap-5
+}
+.marketing__content{
+    @apply flex flex-col space-y-5 
+}
+.remote__subtitle--small,
+.lead__subtitle--small{
+    @apply w-11/12
+}
+.time-tracker{
+    @apply grid grid-cols-2 mx-16 items-center my-10 gap-10
+}
+.time-tracker__content{
+    @apply flex flex-col space-y-5 
+}
+.lead{
+    @apply grid grid-cols-2 mx-16 items-center my-10 gap-10
+}
+.lead__content{
+    @apply flex flex-col space-y-5 
+}
+.remote{
+    @apply grid grid-cols-2 mx-16 items-center my-10 gap-10
+}
+.remote__content{
+    @apply flex flex-col space-y-5 
+}
+.blur-animation{
+    @apply w-96 h-full bg-gradient-to-b from-white via-green-100 to-indigo-300 blur-xl filter mix-blend-screen  opacity-50 absolute -z-10 
+}
+.blur-animation--right{
+    @apply w-1/2 right-0 to-indigo-200 from-green-100
+}
+/* pricing footer */
+.title--pricing{
+    @apply w-1/3 text-center
+}
+.subtitle--pricing{
+    @apply w-1/4 text-center
+}
+.hero-content__input--violet{
+    @apply w-1/5 bg-lightviolet rounded-xl flex pr-10
+}
+.hero-content__period{
+    @apply font-bold text-black text-center 
+}
+.hero-content__plans{
+    @apply grid grid-cols-3 gap-5 mx-10
+}
+.hero-content__card{
+    @apply flex flex-col space-y-5 bg-white px-4 py-10 rounded-3xl text-ourblue  
+}
+.hero-content__card--active{
+@apply  border-indigocolor  border-4 bg-gradient-to-t from-green-100 to-indigo-100;
+
+}
+.hero-content__card-title{
+    @apply flex items-center space-x-5
+}
+.hero-content__card-name {
+    @apply font-bold text-3xl 
+}
+.hero-content__card-surname{
+    @apply font-normal text-base
+}
+.hero-content__profile{
+    @apply flex flex-col items-start pb-5
+}
+.hero-content__list {
+    @apply space-y-5 border-t-2 pt-5 border-bordercolor 
+}
+.hero-content__item{
+    @apply flex space-x-4 font-bold text-base
+}
+.hero-content__card-subtitle{
+    @apply text-center  text-sm font-normal
+}
+.hero-content__price{
+    @apply font-bold text-3xl 
+}
+.hero-content__pricing{
+    @apply items-center flex flex-col space-y-5 justify-center
+}
+.faq-section{
+    @apply flex rounded-3xl mx-10 bg-lightviolet p-10 
+}
+.faq-section__content{
+    @apply w-2/5 flex flex-col space-y-5
+}
+.faq-section__title--large{
+    @apply text-5xl font-bold
+}
+.faq-section__cards{
+    @apply flex-1  flex flex-col space-y-5
+}
+.faq-section__active{
+    @apply w-full flex flex-col   rounded-3xl bg-white py-7 px-5 space-y-3
+}
+.faq-section__subtitle{
+    @apply font-normal text-base
+}
+.faq-section__info{
+    @apply flex justify-between 
+}
+.faq-section__card{
+    @apply w-full flex items-center justify-between rounded-3xl bg-white py-7 px-5
+}
+/* .faq-section__title{
+    @apply font-bold text-2xl
+} */
+.faq-section__card-title{
+    @apply font-bold text-2xl
+}
+.time-tracker__subtitle--small{
+@apply w-11/12
+}
+/* contact page */
+.contact{
+    @apply flex flex-col items-center justify-center my-10
+}
+.contact__form{
+    @apply  rounded-3xl  bg-lightviolet p-10  gap-10 w-10/12 my-10
+}
+.contact__information{
+    @apply flex flex-col space-y-3
+}
+.contact__profile{
+    @apply grid gap-2 grid-cols-2 
+}
+.contact__input{
+    @apply py-3 px-4 rounded-md
+}
+.contact__input--height{
+    @apply h-24
+}
+.contact__btn--margin{
+    @apply mx-0 text-center
+}
+.contact__headlines{
+    @apply my-7 flex flex-col space-y-3
+}
+.contact__mobile{
+    @apply flex flex-col justify-center  space-y-10 items-center
+}
+.contact__message{
+    @apply my-10 flex flex-col space-y-3 
+}
+.contact__division{
+    @apply grid grid-cols-2 items-start
+}
+.contact__credentials{
+    @apply flex space-x-5 w-1/2
+}
+.contact__subtitle{
+    @apply text-base font-normal
+}
+.contact__info-title {
+    @apply flex flex-col  text-xl font-bold text-ourblue leading-tight font-Roboto
+}
+.blur-bg{
+    @apply w-full  h-full absolute -z-10 top-40 left-0 rounded-3xl bg-gradient-to-r from-green-200 via-indigo-100 to-white filter blur-xl opacity-30
+}
+ }
+
