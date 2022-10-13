@@ -14,6 +14,7 @@ module.exports = {
                 bordercolor: '#D8D8D8',
                 indigocolor: '#6B7CFF',
                 darkwhite: '#f8fafd',
+                btnindigo: '#6b7cff'
 
             },
         },
